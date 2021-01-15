@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <title>cg painting</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Upload</a></li>
+        </ul>
+    </header>
+
+
+    <section class="banner"> </section>
+
+    <!-- carousel slide start-->
+
+    <div class="container mt-3">
+
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/cg painting/img/cg_painting.png" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="ny.jpg" alt="New York" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- carousel slide end-->
+
+    <!-- contant start -->
+    <main class="container">
+        <section class="card" data-aos="fade-right">
+            <img src="img/zy.png" alt="">
+            <div>
+                <h3>Acrylic Painting One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi facilis sapiente vitae!
+                    Esse temporibus nisi quo adipisci! Consequatur voluptate eius, quae ipsa ipsum laboriosam dolor
+                    dolorum recusandae eaque in.</p>
+            </div>
+        </section>
+
+        <section class="card" data-aos="fade-left">
+            <img src="img/yx.png" alt="">
+            <div>
+                <h3>Acrylic Painting Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi facilis sapiente vitae!
+                    Esse temporibus nisi quo adipisci! Consequatur voluptate eius, quae ipsa ipsum laboriosam dolor
+                    dolorum recusandae eaque in.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- contant end -->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+</body>
+
+</html>

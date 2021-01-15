@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Update</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="DeleteData.css">
+
+</head>
+
+<body>
+  <section class="container-fluid bg">
+    <section class="row justify-content-center">
+      <section class="col-12 col-sm-6 ">
+
+
+
+
+        <form method="POST" action="/delete" encType="multipart/form-data" class="form-container">
+          <h2>刪除資料</h2>
+          ID: <select class="form-control" name="uid" id="uid" required>
+            <option value="" selected disabled hidden>Choose your ID</option>
+            <option value="黃紫晏"> 黃紫晏</option>
+            <option value="陳郁翔"> 陳郁翔</option>
+            <option value="魏鈺晉"> 魏鈺晉</option>
+            <option value="陳俊洋"> 陳俊洋</option>
+          </select>
+          <br>
+
+          List: <select class="form-control" name="List" id="List" required>
+            <option value="" selected disabled hidden>Choose your List</option>
+            <option value="攝影"> 攝影</option>
+            <option value="繪圖"> 繪圖</option>
+            <option value="動畫"> 動畫</option>
+            <option value="音效"> 音效</option>
+            <option value="建模"> 建模</option>
+          </select>
+          <br>
+
+          密碼<input class="form-control" type="password" name="pw" id="pw" required><br>
+
+
+          作品名稱<input class="form-control" type="text" name="DesignTitle" id="DesignTitle" required><br>
+
+          
+
+          <button type="submit" class="btn btn-primary btn-block">送出</button> <br>
+          <br>
+          <a href="../HomePage/home.html">回到首頁</a><br>
+
+          <a href="../LoginForm/LoginForm.html">上傳作品</a>
+
+          
+        </form>
+      </section>
+    </section>
+  </section>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
